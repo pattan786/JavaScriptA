@@ -19,25 +19,33 @@ CreateNewCard = function  (){
   var card = document.createElement("div");
    card.style.width="200px";
    card.style.height="250px";
-   card.style.border="solid 3px";
+   card.style.border="gray 1px";
+   card.style.boxShadow="0px 0px 1px 1px"
+   card.style.borderRadius="15px";
    card.style.background="white";
    card.style.margin="10px 10px 10px 10px";
-   var m;
-   var no = document.getElementById("cardCreate");
-   if(no.childElementCount==0){
-     m=1;
-   }
-   else{
-     m=parseInt(no.lastChild.id)+1;
-   }
-   card.id=m;
+  //  var m;
+  //  var no = document.getElementById("cardCreate");
+  //  if(no.childElementCount==0){
+  //    m=1;
+  //  }
+  //  else{
+  //    m=parseInt(no.lastChild.id)+1;
+  //  }
+  //  card.id=m;
    
    //heading
   var header = document.createElement("h3");
     var headerContent = document.querySelector("#inputLarge").value;
      header.innerHTML=headerContent;
      header.style.textAlign="center";
-     header.style.borderBottom="solid";
+     header.style.borderBottom="solid 1px";
+     header.style.fontWeight="400";
+     header.style.lineHeight="1.5"
+
+    //  font-weight: 400;
+     /* line-height: 1.2; */
+     
   //list
   var list = document.createElement("ul") ;     
   var l = document.getElementById("New-List");
@@ -99,11 +107,14 @@ CreateNewCard = function  (){
 
   RefreshModal = function(){
     
-    document.getElementById("inputLarge").value = "";
+    document.getElementById("inputLarge").value = null;
     var rl = document.getElementById("New-List");
+      // for(var i=0;i<rl.childElementCount;){
+      //   var child = rl.firstChild;
+      //   child.parentElement.removeChild(child);
+      // }
       for(var i=0;i<rl.childElementCount;){
-        var child = rl.firstChild;
-        child.parentNode.removeChild(child);
+        RemoveLastChild();
       }
     
   }
