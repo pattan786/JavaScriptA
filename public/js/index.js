@@ -92,19 +92,21 @@ CreateNewCard = function  (){
     
     var lc = document.getElementById("New-List");
     if(lc.childElementCount>0){
-      console.log(lc.childElementCount)
+      
     lc.removeChild(lc.lastChild);;
     }
   }
 
-  // RefreshModal = function(){
+  RefreshModal = function(){
     
-  //   document.getElementById("inputLarge").value = "";
-  //   var rl = document.getElementById("New-List");
-  //   for(var x=0;x<rl.childElementCount;x++){
-      
-  //   }
-  // }
+    document.getElementById("inputLarge").value = "";
+    var rl = document.getElementById("New-List");
+      for(var i=0;i<rl.childElementCount;){
+        var child = rl.firstChild;
+        child.parentNode.removeChild(child);
+      }
+    
+  }
 
 
 
