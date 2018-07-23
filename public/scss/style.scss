@@ -1,0 +1,65 @@
+// @media(max-width:350px){
+//     .modal .modal-dialog .modal-content .modal-header .modal-title{
+//         font-size: 16px;
+// }
+    
+// }
+body{
+    background-color: #cccccc ;
+}
+.Prime-button{
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cardsSection{
+    width: 88%;
+    margin: auto;
+}
+
+
+.sortable { list-style-type: none; margin: 0; padding: 0;height: 165px}
+.sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+
+.drag{
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    
+    margin: auto;
+    justify-content: space-evenly;
+}
+.AddListButton{
+    // float: right;
+    margin-top: 10px;
+    width: 49%;
+}
+#New-List{
+    text-align: center;
+    
+}
+.width{
+    width: 250px;
+    border: 1px solid #ced4da;
+    margin-bottom: 5px;
+}
+.cardButt {
+    margin-left: 40px;
+    
+    background-color: transparent;
+    font-family: sans-serif;
+    
+}
+.cardButt:focus{
+    box-shadow: none;
+}
+.save-create{
+    width: 100%;
+}
+.red{
+    border: red;
+}
