@@ -13,7 +13,7 @@ body{
     width: 88%;
     margin: auto;
 }
-.sortable { list-style-type: none; margin: 0; padding: 0;height: 165px}
+.sortable { list-style-type: none; margin: 0; padding: 0;height: 175px}
 .sortable li { margin: 0 3px 3px 3px; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
 .drag{
     display: flex;
@@ -35,12 +35,24 @@ body{
     margin-bottom: 5px;
 }
 .cardButt {
-    margin-left: 40px;
-    background-color: transparent;
+    margin-left: 82px;
+    // background-color: transparent;
+    background-color:white;
+    
+    padding-top: 0px;
+    width: 26px;
+    height: 24px;
+    padding-left: 6px;
+    border-radius: 12px;
+    padding-left: 7px;
     font-family: sans-serif;
 }
 .cardButt:focus{
     box-shadow: none;
+}
+.cardButt:hover{
+    background-color: black;
+    color: white;
 }
 .save-create{
     width: 100%;
